@@ -6,7 +6,7 @@ const { createClient } = require('@supabase/supabase-js');
 const tf = require('@tensorflow/tfjs'); // For TensorFlow.js ML model
 const twilio = require('twilio'); // For SMS/Email
 require('dotenv').config(); // To load environment variables
-
+const ipstackApiKey = process.env.IPSTACK_API_KEY;
 const app = express();
 const PORT = process.env.PORT || 3000;
 
